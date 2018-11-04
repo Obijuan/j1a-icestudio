@@ -113,7 +113,7 @@ module inpin(
         .D_IN_0(rd));
 endmodule
 
-module top(input pclk, output D1, output D2, output D3, output D4, output D5,
+module j1a(input pclk, output D1, output D2, output D3, output D4, output D5,
 
            output TXD,        // UART TX
            input RXD,         // UART RX
