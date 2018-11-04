@@ -3,15 +3,9 @@
 
 module j1a(input pclk,
 
-           output TXD,        // UART TX
-           input RXD,         // UART RX
-
-					 output D1,         // LED 1
-					 output D2,
-					 output D3,
-					 output D4,
-					 output D5,
-
+           output TX,        // UART TX
+           input RX,         // UART RX
+					 output [4:0] D,
            input resetq);
 
   localparam MHZ = 12;
@@ -123,13 +117,13 @@ module j1a(input pclk,
   wire [7:0] uart0_data;
   wire uart0_wr = io_wr_ & io_addr_[12];
   wire uart0_rd = io_rd_ & io_addr_[12];
-  wire uart_RXD = RXD;
+  wire uart_RXD = RX;
   //inpin _rcxd(.clk(clk), .pin(RXD), .rd(uart_RXD));
   buart _uart0 (
      .clk(clk),
      .resetq(1'b1),
      .rx(uart_RXD),
-     .tx(TXD),
+     .tx(TX),
      .rd(uart0_rd),
      .wr(uart0_wr),
      .valid(uart0_valid),
@@ -142,14 +136,14 @@ module j1a(input pclk,
 
 
 	SB_IO #(.PIN_TYPE(6'b0101_01)) _io0 (
-        .PACKAGE_PIN(D5),
+        .PACKAGE_PIN(D[4]),
         .CLOCK_ENABLE(w4),
         .OUTPUT_CLK(clk),
         .D_OUT_0(dout_[0]),
         .D_IN_0(LEDS[0]));
 
 	SB_IO #(.PIN_TYPE(6'b0101_01)) _io1 (
-	        .PACKAGE_PIN(D4),
+	        .PACKAGE_PIN(D[3]),
 	        .CLOCK_ENABLE(w4),
 	        .OUTPUT_CLK(clk),
 	        .D_OUT_0(dout_[1]),
@@ -157,7 +151,7 @@ module j1a(input pclk,
 
 
   SB_IO #(.PIN_TYPE(6'b0101_01)) _io2 (
-					.PACKAGE_PIN(D3),
+					.PACKAGE_PIN(D[2]),
 					.CLOCK_ENABLE(w4),
 					.OUTPUT_CLK(clk),
 					.D_OUT_0(dout_[2]),
@@ -165,7 +159,7 @@ module j1a(input pclk,
 
 
 	SB_IO #(.PIN_TYPE(6'b0101_01)) _io3 (
-	        .PACKAGE_PIN(D2),
+	        .PACKAGE_PIN(D[1]),
 	        .CLOCK_ENABLE(w4),
 	        .OUTPUT_CLK(clk),
 	        .D_OUT_0(dout_[3]),
@@ -173,7 +167,7 @@ module j1a(input pclk,
 
 
 	SB_IO #(.PIN_TYPE(6'b0101_01)) _io4 (
-	        .PACKAGE_PIN(D1),
+	        .PACKAGE_PIN(D[0]),
 	        .CLOCK_ENABLE(w4),
 	        .OUTPUT_CLK(clk),
 	        .D_OUT_0(dout_[4]),
