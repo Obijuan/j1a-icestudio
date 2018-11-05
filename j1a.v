@@ -37,80 +37,22 @@ module j1a(input pclk,
   j1 _j1(
     .clk(clk),
     .resetq(resetq),
-    .io_rd(io_rd),
-    .io_wr(io_wr),
-    .mem_wr(mem_wr),
-    .dout(dout),
-    .io_din(io_din),
-    .mem_addr(mem_addr),
-    .code_addr(code_addr),
-    .insn(insn));
-
-  /*
-  // ######   TICKS   #########################################
-
-  reg [15:0] ticks;
-  always @(posedge clk)
-    ticks <= ticks + 16'd1;
-  */
+    .io_rd(io_rd),    //-- output
+    .io_wr(io_wr),    //-- output
+    .mem_wr(mem_wr),  //-- output
+    .dout(dout),      //-- output
+    .io_din(io_din),  //-- input
+    .mem_addr(mem_addr),  //-- output
+    .code_addr(code_addr), //-- output (13 bits)
+    .insn(insn));          //-- input
 
   // ######   IO SIGNALS   ####################################
 
-`define EASE_IO_TIMING
-`ifdef EASE_IO_TIMING
-  reg io_wr_, io_rd_;
-  reg [15:0] dout_;
-  reg [15:0] io_addr_;
+	wire io_wr_ = io_wr, io_rd_ = io_rd;
+	wire [15:0] dout_ = dout; //--
+	wire [15:0] io_addr_ = mem_addr;
 
-  always @(posedge clk) begin
-    {io_rd_, io_wr_, dout_} <= {io_rd, io_wr, dout};
-    if (io_rd | io_wr)
-      io_addr_ <= mem_addr;
-  end
-`else
-  wire io_wr_ = io_wr, io_rd_ = io_rd;
-  wire [15:0] dout_ = dout;
-  wire [15:0] io_addr_ = mem_addr;
-`endif
 
-  // ######   PMOD   ##########################################
-
-  reg [7:0] pmod_dir;   // 1:output, 0:input
-  wire [7:0] pmod_in;
-
-/*
-  ioport _mod (.clk(clk),
-               .pins({PIO1_09, PIO1_08, PIO1_07, PIO1_06, PIO1_05, PIO1_04, PIO1_03, PIO1_02}),
-               .we(io_wr_ & io_addr_[0]),
-               .wd(dout_),
-               .rd(pmod_in),
-               .dir(pmod_dir));
-*/
-  // ######   HDR1   ##########################################
-
-  reg [7:0] hdr1_dir;   // 1:output, 0:input
-  wire [7:0] hdr1_in;
-
-/*
-  ioport _hdr1 (.clk(clk),
-               .pins({PIO0_09, PIO0_08, PIO0_07, PIO0_06, PIO0_05, PIO0_04, PIO0_03, PIO0_02}),
-               .we(io_wr_ & io_addr_[4]),
-               .wd(dout_[7:0]),
-               .rd(hdr1_in),
-               .dir(hdr1_dir));
-*/
-  // ######   HDR2   ##########################################
-
-  reg [7:0] hdr2_dir;   // 1:output, 0:input
-  wire [7:0] hdr2_in;
-/*
-  ioport _hdr2 (.clk(clk),
-               .pins({PIO2_17, PIO2_16, PIO2_15, PIO2_14, PIO2_13, PIO2_12, PIO2_11, PIO2_10}),
-               .we(io_wr_ & io_addr_[6]),
-               .wd(dout_[7:0]),
-               .rd(hdr2_in),
-               .dir(hdr2_dir));
-*/
   // ######   UART   ##########################################
 
   wire uart0_valid, uart0_busy;
@@ -118,7 +60,7 @@ module j1a(input pclk,
   wire uart0_wr = io_wr_ & io_addr_[12];
   wire uart0_rd = io_rd_ & io_addr_[12];
   wire uart_RXD = RX;
-  //inpin _rcxd(.clk(clk), .pin(RXD), .rd(uart_RXD));
+
   buart _uart0 (
      .clk(clk),
      .resetq(1'b1),
@@ -173,124 +115,11 @@ module j1a(input pclk,
 	        .D_OUT_0(dout_[4]),
 	        .D_IN_0(LEDS[4]));
 
-
-
-  //outpin led0 (.clk(clk), .we(w4), .pin(D5), .wd(dout_[0]), .rd(LEDS[0]));
-  //outpin led1 (.clk(clk), .we(w4), .pin(D4), .wd(dout_[1]), .rd(LEDS[1]));
-  //outpin led2 (.clk(clk), .we(w4), .pin(D3), .wd(dout_[2]), .rd(LEDS[2]));
-  //outpin led3 (.clk(clk), .we(w4), .pin(D2), .wd(dout_[3]), .rd(LEDS[3]));
-  //outpin led4 (.clk(clk), .we(w4), .pin(D1), .wd(dout_[4]), .rd(LEDS[4]));
-
-  wire [4:0] PIOS;
-  wire w8 = io_wr_ & io_addr_[3];
-
-/*
-	SB_IO #(.PIN_TYPE(6'b0101_01)) _io00 (
-	        .PACKAGE_PIN(PIOS_03),
-	        .CLOCK_ENABLE(w8),
-	        .OUTPUT_CLK(clk),
-	        .D_OUT_0(dout_[0]),
-	        .D_IN_0(PIOS[0]));
-
-	SB_IO #(.PIN_TYPE(6'b0101_01)) _io01 (
-	        .PACKAGE_PIN(PIOS_02),
-	        .CLOCK_ENABLE(w8),
-	        .OUTPUT_CLK(clk),
-	        .D_OUT_0(dout_[1]),
-	        .D_IN_0(PIOS[1]));
-*/
-/*
-	SB_IO #(.PIN_TYPE(6'b0101_01)) _io02 (
-					.PACKAGE_PIN(PIOS_00),
-					.CLOCK_ENABLE(w8),
-					.OUTPUT_CLK(clk),
-					.D_OUT_0(dout_[2]),
-					.D_IN_0(PIOS[2]));
-*/
-/*
-	SB_IO #(.PIN_TYPE(6'b0101_01)) _io03 (
-					.PACKAGE_PIN(PIO1_18),
-					.CLOCK_ENABLE(w8),
-					.OUTPUT_CLK(clk),
-					.D_OUT_0(dout_[3]),
-					.D_IN_0(PIOS[3]));
-
-*/
-/*
-	SB_IO #(.PIN_TYPE(6'b0101_01)) _io04 (
-					.PACKAGE_PIN(PIO1_20),
-					.CLOCK_ENABLE(w8),
-					.OUTPUT_CLK(clk),
-					.D_OUT_0(dout_[4]),
-					.D_IN_0(PIOS[4]));
-*/
-  //outpin pio0 (.clk(clk), .we(w8), .pin(PIOS_03), .wd(dout_[0]), .rd(PIOS[0]));
-  //outpin pio1 (.clk(clk), .we(w8), .pin(PIOS_02), .wd(dout_[1]), .rd(PIOS[1]));
-  //outpin pio2 (.clk(clk), .we(w8), .pin(PIOS_00), .wd(dout_[2]), .rd(PIOS[2]));
-  //outpin pio3 (.clk(clk), .we(w8), .pin(PIO1_18), .wd(dout_[3]), .rd(PIOS[3]));
-  //outpin pio4 (.clk(clk), .we(w8), .pin(PIO1_20), .wd(dout_[4]), .rd(PIOS[4]));
-
-  // ######   RING OSCILLATOR   ###############################
-
-  wire [1:0] buffers_in, buffers_out;
-  assign buffers_in = {buffers_out[0:0], ~buffers_out[1]};
-  SB_LUT4 #(
-          .LUT_INIT(16'd2)
-  ) buffers [1:0] (
-          .O(buffers_out),
-          .I0(buffers_in),
-          .I1(1'b0),
-          .I2(1'b0),
-          .I3(1'b0)
-  );
-  wire random = ~buffers_out[1];
-
-  // ######   IO PORTS   ######################################
-
-  /*        bit   mode    device
-      0001  0     r/w     PMOD GPIO
-      0002  1     r/w     PMOD direction
-      0004  2     r/w     LEDS
-      0008  3     r/w     misc.out
-      0010  4     r/w     HDR1 GPIO
-      0020  5     r/w     HDR1 direction
-      0040  6     r/w     HDR2 GPIO
-      0080  7     r/w     HDR2 direction
-      0800  11      w     sb_warmboot
-      1000  12    r/w     UART RX, UART TX
-      2000  13    r       misc.in
-  */
-
   assign io_din =
-    (io_addr_[ 0] ? {8'd0, pmod_in}                                     : 16'd0) |
-    (io_addr_[ 1] ? {8'd0, pmod_dir}                                    : 16'd0) |
-    (io_addr_[ 2] ? {11'd0, LEDS}                                       : 16'd0) |
-    (io_addr_[ 3] ? {11'd0, PIOS}                                       : 16'd0) |
-    (io_addr_[ 4] ? {8'd0, hdr1_in}                                     : 16'd0) |
-    (io_addr_[ 5] ? {8'd0, hdr1_dir}                                    : 16'd0) |
-    (io_addr_[ 6] ? {8'd0, hdr2_in}                                     : 16'd0) |
-    (io_addr_[ 7] ? {8'd0, hdr2_dir}                                    : 16'd0) |
     (io_addr_[12] ? {8'd0, uart0_data}                                  : 16'd0) |
-    (io_addr_[13] ? {11'd0, random, 1'b1, 1'b1, uart0_valid, !uart0_busy} : 16'd0);
+    (io_addr_[13] ? {11'd0, 1'b1, 1'b1, 1'b1, uart0_valid, !uart0_busy} : 16'd0);
 
-  reg boot, s0, s1;
 
-  SB_WARMBOOT _sb_warmboot (
-    .BOOT(boot),
-    .S0(s0),
-    .S1(s1)
-    );
-
-  always @(posedge clk) begin
-    if (io_wr_ & io_addr_[1])
-      pmod_dir <= dout_[7:0];
-    if (io_wr_ & io_addr_[5])
-      hdr1_dir <= dout_[7:0];
-    if (io_wr_ & io_addr_[7])
-      hdr2_dir <= dout_[7:0];
-    if (io_wr_ & io_addr_[11])
-      {boot, s1, s0} <= dout_[2:0];
-  end
 
   always @(negedge resetq or posedge clk)
     if (!resetq)
