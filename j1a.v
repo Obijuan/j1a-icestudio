@@ -126,7 +126,17 @@ module j1a(input pclk,
       unlocked <= 0;
     else
       unlocked <= unlocked | io_wr_;
+/*
+wire we0 = mem_wr & !mem_addr[12];
+wire we1 = mem_wr & mem_addr[12];
+wire wclke0 = unlocked;
+wire wclke1 = unlocked;
+*/
 
+wire we0 = 1'b1;
+wire we1 = 1'b1;
+wire wclke0 = mem_wr & !mem_addr[12] & unlocked;
+wire wclke1 = mem_wr & mem_addr[12] & unlocked;
 
 //---------------------- memory
 
@@ -154,7 +164,7 @@ SB_RAM2048x2 #(
 .RDATA(insn0[1:0]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & !mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke0), .WE(we0),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[1:0]));
 
@@ -179,7 +189,7 @@ SB_RAM2048x2 #(
 .RDATA(insn0[3:2]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & !mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke0), .WE(we0),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[3:2]));
 
@@ -204,7 +214,7 @@ SB_RAM2048x2 #(
 .RDATA(insn0[5:4]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & !mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke0), .WE(we0),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[5:4]));
 
@@ -229,7 +239,7 @@ SB_RAM2048x2 #(
 .RDATA(insn0[7:6]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & !mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke0), .WE(we0),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[7:6]));
 
@@ -254,7 +264,7 @@ SB_RAM2048x2 #(
 .RDATA(insn0[9:8]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & !mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke0), .WE(we0),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[9:8]));
 
@@ -279,7 +289,7 @@ SB_RAM2048x2 #(
 .RDATA(insn0[11:10]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & !mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke0), .WE(we0),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[11:10]));
 
@@ -304,7 +314,7 @@ SB_RAM2048x2 #(
 .RDATA(insn0[13:12]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & !mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke0), .WE(we0),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[13:12]));
 
@@ -329,7 +339,7 @@ SB_RAM2048x2 #(
 .RDATA(insn0[15:14]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & !mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke0), .WE(we0),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[15:14]));
 
@@ -354,7 +364,7 @@ SB_RAM2048x2 #(
 .RDATA(insn1[1:0]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke1), .WE(we1),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[1:0]));
 
@@ -379,7 +389,7 @@ SB_RAM2048x2 #(
 .RDATA(insn1[3:2]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke1), .WE(we1),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[3:2]));
 
@@ -404,7 +414,7 @@ SB_RAM2048x2 #(
 .RDATA(insn1[5:4]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke1), .WE(we1),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[5:4]));
 
@@ -429,7 +439,7 @@ SB_RAM2048x2 #(
 .RDATA(insn1[7:6]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke1), .WE(we1),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[7:6]));
 
@@ -454,7 +464,7 @@ SB_RAM2048x2 #(
 .RDATA(insn1[9:8]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke1), .WE(we1),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[9:8]));
 
@@ -479,7 +489,7 @@ SB_RAM2048x2 #(
 .RDATA(insn1[11:10]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke1), .WE(we1),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[11:10]));
 
@@ -504,7 +514,7 @@ SB_RAM2048x2 #(
 .RDATA(insn1[13:12]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke1), .WE(we1),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[13:12]));
 
@@ -529,15 +539,16 @@ SB_RAM2048x2 #(
 .RDATA(insn1[15:14]),
 .RADDR(code_addr[10:0]),
 .RCLK(clk), .RCLKE(1'b1), .RE(1'b1),
-.WCLK(clk), .WCLKE(unlocked), .WE(mem_wr & mem_addr[12]),
+.WCLK(clk), .WCLKE(wclke1), .WE(we1),
 .WADDR(mem_addr[11:1]),
 .MASK(16'h0000), .WDATA(dout[15:14]));
 
+
 reg c11;
-always @(posedge clk) c11 <= code_addr[11];
-wire [15:0] cm = {16{c11}};
-assign insn = (cm & insn1) | (~cm & insn0);
-// assign insn = c11 ? insn1 : insn0;
+always @(posedge clk)
+  c11 <= code_addr[11];
+
+assign insn = c11 ? insn1 : insn0;
 
 
 
