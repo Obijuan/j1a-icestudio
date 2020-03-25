@@ -134,7 +134,7 @@
           "id": "ac824ce9-e479-4150-9f46-0978e99540bb",
           "type": "basic.code",
           "data": {
-            "code": "// @include top.v\n// @include j1.v\n// @include j1a.v\n// @include mem.v\n// @include stack2.v\n// @include uart.v\n\n \n j1a U1 (\n    .pclk(pclk),\n    .TX(TX),\n    .RX(RX),\n    .D(D),\n    .resetq(resetq));",
+            "code": "// @include top.v\n// @include j1.v\n// @include j1a.v\n// @include mem.v\n// @include stack2.v\n// @include uart.v\n// @include nuc.list\n \n j1a U1 (\n    .pclk(pclk),\n    .TX(TX),\n    .RX(RX),\n    .D(D),\n    .resetq(resetq));",
             "params": [],
             "ports": {
               "in": [
