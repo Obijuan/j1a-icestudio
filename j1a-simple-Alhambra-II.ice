@@ -12,60 +12,23 @@
     "graph": {
       "blocks": [
         {
-          "id": "d3703daa-73b8-41a1-8f96-9e118d401a9f",
-          "type": "basic.inputLabel",
+          "id": "65e5ed38-6c4c-4aab-8069-c328e953e98c",
+          "type": "basic.input",
           "data": {
-            "name": "do",
-            "range": "[7:0]",
+            "name": "",
             "pins": [
               {
-                "index": "7",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "6",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "5",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "4",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "3",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "2",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "1",
-                "name": "",
-                "value": ""
-              },
-              {
                 "index": "0",
-                "name": "",
-                "value": ""
+                "name": "RX",
+                "value": "62"
               }
             ],
-            "virtual": true,
-            "blockColor": "fuchsia",
-            "oldBlockColor": "fuchsia"
+            "virtual": false,
+            "clock": false
           },
           "position": {
-            "x": 848,
-            "y": 16
+            "x": 1448,
+            "y": -184
           }
         },
         {
@@ -83,28 +46,8 @@
             "virtual": false
           },
           "position": {
-            "x": 1808,
-            "y": 56
-          }
-        },
-        {
-          "id": "65e5ed38-6c4c-4aab-8069-c328e953e98c",
-          "type": "basic.input",
-          "data": {
-            "name": "",
-            "pins": [
-              {
-                "index": "0",
-                "name": "RX",
-                "value": "62"
-              }
-            ],
-            "virtual": false,
-            "clock": false
-          },
-          "position": {
-            "x": 1176,
-            "y": 104
+            "x": 2088,
+            "y": -48
           }
         },
         {
@@ -123,77 +66,16 @@
             "virtual": true
           },
           "position": {
-            "x": 1808,
-            "y": 120
+            "x": 2088,
+            "y": 16
           }
         },
         {
-          "id": "5295e5c1-0bf9-461f-a8e4-4fdf586c1f6f",
-          "type": "basic.inputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "w4",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true,
-            "oldBlockColor": "fuchsia"
-          },
-          "position": {
-            "x": 840,
-            "y": 120
-          }
-        },
-        {
-          "id": "e9ee0c57-2054-4b22-ba37-8e3824b76a2d",
+          "id": "65054fd5-3a52-4baa-9f3b-cf0405b5cd4e",
           "type": "basic.outputLabel",
           "data": {
             "blockColor": "fuchsia",
-            "name": "uart0_rd",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true
-          },
-          "position": {
-            "x": 1176,
-            "y": 160
-          }
-        },
-        {
-          "id": "420cb073-0164-4994-aff2-52ccecf1e1a3",
-          "type": "basic.inputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "uart0_rd",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true
-          },
-          "position": {
-            "x": 840,
-            "y": 184
-          }
-        },
-        {
-          "id": "77843c85-5ae4-4331-a590-0e7e2bc3a432",
-          "type": "basic.inputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "uart0_busy",
+            "name": "io_wr",
             "pins": [
               {
                 "index": "0",
@@ -205,183 +87,8 @@
             "oldBlockColor": "fuchsia"
           },
           "position": {
-            "x": 1800,
-            "y": 184
-          }
-        },
-        {
-          "id": "11127019-1657-4653-bb9e-05d1d37070cc",
-          "type": "basic.outputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "uart0_wr",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true,
-            "oldBlockColor": "fuchsia"
-          },
-          "position": {
-            "x": 1176,
-            "y": 216
-          }
-        },
-        {
-          "id": "0b755e68-ff16-425a-aae3-f3fea766e8d4",
-          "type": "basic.inputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "uart0_wr",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true,
-            "oldBlockColor": "fuchsia"
-          },
-          "position": {
-            "x": 832,
-            "y": 248
-          }
-        },
-        {
-          "id": "68883952-c3b3-486d-8a09-8ad2e20c8625",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "uart0_data",
-            "range": "[7:0]",
-            "pins": [
-              {
-                "index": "7",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "6",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "5",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "4",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "3",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "2",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "1",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true,
-            "blockColor": "fuchsia"
-          },
-          "position": {
-            "x": 1824,
-            "y": 248
-          }
-        },
-        {
-          "id": "5635b99e-3fef-4b0a-a9fc-806edad7b076",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "do",
-            "range": "[7:0]",
-            "pins": [
-              {
-                "index": "7",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "6",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "5",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "4",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "3",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "2",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "1",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true,
-            "blockColor": "fuchsia",
-            "oldBlockColor": "fuchsia"
-          },
-          "position": {
-            "x": 1176,
-            "y": 264
-          }
-        },
-        {
-          "id": "ba1e3f74-8fb7-4864-8f22-cd1ba63309fe",
-          "type": "basic.outputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "uart0_valid",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true
-          },
-          "position": {
-            "x": 8,
-            "y": 280
+            "x": 1056,
+            "y": 24
           }
         },
         {
@@ -476,13 +183,13 @@
             "blockColor": "fuchsia"
           },
           "position": {
-            "x": 888,
-            "y": 312
+            "x": 848,
+            "y": 56
           }
         },
         {
-          "id": "9373440c-282f-4ca8-afc0-1434cbe7fc34",
-          "type": "basic.outputLabel",
+          "id": "77843c85-5ae4-4331-a590-0e7e2bc3a432",
+          "type": "basic.inputLabel",
           "data": {
             "blockColor": "fuchsia",
             "name": "uart0_busy",
@@ -497,270 +204,36 @@
             "oldBlockColor": "fuchsia"
           },
           "position": {
-            "x": 8,
-            "y": 368
+            "x": 2080,
+            "y": 80
           }
         },
         {
-          "id": "06c4daac-b4e1-4e2f-8f77-ff04f6036b93",
-          "type": "basic.inputLabel",
+          "id": "69632eae-c06e-4814-8648-eb13f9b0cbb0",
+          "type": "basic.outputLabel",
           "data": {
-            "name": "code_addr",
-            "range": "[12:0]",
-            "pins": [
-              {
-                "index": "12",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "11",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "10",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "9",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "8",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "7",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "6",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "5",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "4",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "3",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "2",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "1",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true,
-            "blockColor": "fuchsia"
-          },
-          "position": {
-            "x": 888,
-            "y": 368
-          }
-        },
-        {
-          "id": "474f9a61-9b0b-45a7-8ac1-13757b0a9153",
-          "type": "basic.output",
-          "data": {
-            "name": "D",
-            "range": "[4:0]",
-            "pins": [
-              {
-                "index": "4",
-                "name": "LED4",
-                "value": "41"
-              },
-              {
-                "index": "3",
-                "name": "LED3",
-                "value": "42"
-              },
-              {
-                "index": "2",
-                "name": "LED2",
-                "value": "43"
-              },
-              {
-                "index": "1",
-                "name": "LED1",
-                "value": "44"
-              },
-              {
-                "index": "0",
-                "name": "LED0",
-                "value": "45"
-              }
-            ],
-            "virtual": false
-          },
-          "position": {
-            "x": 1728,
-            "y": 384
-          }
-        },
-        {
-          "id": "2311157e-f95a-45f1-b0f3-fae6327d511b",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "mem_wr",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true,
             "blockColor": "fuchsia",
+            "name": "io_rd",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
             "oldBlockColor": "fuchsia"
           },
           "position": {
-            "x": 872,
-            "y": 432
+            "x": 1024,
+            "y": 80
           }
         },
         {
-          "id": "4cda24d4-a3c1-49b8-a0b9-98339e420700",
+          "id": "5608d4e7-f423-46ec-b3f4-5a1f9eb6ffc8",
           "type": "basic.outputLabel",
           "data": {
-            "name": "uart0_data",
-            "range": "[7:0]",
-            "pins": [
-              {
-                "index": "7",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "6",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "5",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "4",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "3",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "2",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "1",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true,
-            "blockColor": "fuchsia"
-          },
-          "position": {
-            "x": 0,
-            "y": 448
-          }
-        },
-        {
-          "id": "a442e1e3-49a1-4b50-af0f-65530888fd8c",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "do",
-            "range": "[7:0]",
-            "pins": [
-              {
-                "index": "7",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "6",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "5",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "4",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "3",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "2",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "1",
-                "name": "",
-                "value": ""
-              },
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true,
-            "blockColor": "fuchsia",
-            "oldBlockColor": "fuchsia"
-          },
-          "position": {
-            "x": 1208,
-            "y": 448
-          }
-        },
-        {
-          "id": "a6c3ecc6-1806-4869-b4d5-48c0a222a290",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "dout",
+            "name": "mem_addr",
             "range": "[15:0]",
             "pins": [
               {
@@ -848,17 +321,52 @@
             "blockColor": "fuchsia"
           },
           "position": {
-            "x": 888,
-            "y": 496
+            "x": 1088,
+            "y": 136
           }
         },
         {
-          "id": "0ec733b1-535c-40d0-b802-7cdb57136885",
-          "type": "basic.outputLabel",
+          "id": "68883952-c3b3-486d-8a09-8ad2e20c8625",
+          "type": "basic.inputLabel",
           "data": {
-            "blockColor": "fuchsia",
-            "name": "w4",
+            "name": "uart0_data",
+            "range": "[7:0]",
             "pins": [
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
               {
                 "index": "0",
                 "name": "",
@@ -866,11 +374,149 @@
               }
             ],
             "virtual": true,
+            "blockColor": "fuchsia"
+          },
+          "position": {
+            "x": 2104,
+            "y": 144
+          }
+        },
+        {
+          "id": "5635b99e-3fef-4b0a-a9fc-806edad7b076",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "do",
+            "range": "[7:0]",
+            "pins": [
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "blockColor": "fuchsia",
             "oldBlockColor": "fuchsia"
           },
           "position": {
-            "x": 1208,
-            "y": 504
+            "x": 1456,
+            "y": 160
+          }
+        },
+        {
+          "id": "06c4daac-b4e1-4e2f-8f77-ff04f6036b93",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "code_addr",
+            "range": "[12:0]",
+            "pins": [
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "blockColor": "fuchsia"
+          },
+          "position": {
+            "x": 904,
+            "y": 168
           }
         },
         {
@@ -966,16 +612,113 @@
             "oldBlockColor": "fuchsia"
           },
           "position": {
-            "x": 24,
-            "y": 544
+            "x": 32,
+            "y": 240
           }
         },
         {
-          "id": "a2da3af8-2e41-42c8-b09b-ca94fe19cff4",
+          "id": "2311157e-f95a-45f1-b0f3-fae6327d511b",
           "type": "basic.inputLabel",
           "data": {
-            "name": "unlocked",
+            "name": "mem_wr",
             "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "blockColor": "fuchsia",
+            "oldBlockColor": "fuchsia"
+          },
+          "position": {
+            "x": 872,
+            "y": 264
+          }
+        },
+        {
+          "id": "c06e17f4-90fb-469d-a3c7-5ecd1984fdc6",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "mem_addr",
+            "range": "[15:0]",
+            "pins": [
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
               {
                 "index": "0",
                 "name": "",
@@ -986,8 +729,457 @@
             "blockColor": "fuchsia"
           },
           "position": {
+            "x": -448,
+            "y": 288
+          }
+        },
+        {
+          "id": "474f9a61-9b0b-45a7-8ac1-13757b0a9153",
+          "type": "basic.output",
+          "data": {
+            "name": "D",
+            "range": "[4:0]",
+            "pins": [
+              {
+                "index": "4",
+                "name": "LED4",
+                "value": "41"
+              },
+              {
+                "index": "3",
+                "name": "LED3",
+                "value": "42"
+              },
+              {
+                "index": "2",
+                "name": "LED2",
+                "value": "43"
+              },
+              {
+                "index": "1",
+                "name": "LED1",
+                "value": "44"
+              },
+              {
+                "index": "0",
+                "name": "LED0",
+                "value": "45"
+              }
+            ],
+            "virtual": false
+          },
+          "position": {
+            "x": 1896,
+            "y": 352
+          }
+        },
+        {
+          "id": "99fb25cc-9093-4fec-bd12-10520b39146a",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "uart0_valid",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": -480,
+            "y": 352
+          }
+        },
+        {
+          "id": "a6c3ecc6-1806-4869-b4d5-48c0a222a290",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "dout",
+            "range": "[15:0]",
+            "pins": [
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "blockColor": "fuchsia"
+          },
+          "position": {
+            "x": 840,
+            "y": 360
+          }
+        },
+        {
+          "id": "a442e1e3-49a1-4b50-af0f-65530888fd8c",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "do",
+            "range": "[7:0]",
+            "pins": [
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "blockColor": "fuchsia",
+            "oldBlockColor": "fuchsia"
+          },
+          "position": {
+            "x": 1152,
+            "y": 400
+          }
+        },
+        {
+          "id": "cdf21fa6-cd46-4942-b1f9-21e6151702a7",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "uart0_busy",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "oldBlockColor": "fuchsia"
+          },
+          "position": {
+            "x": -432,
+            "y": 432
+          }
+        },
+        {
+          "id": "5295e5c1-0bf9-461f-a8e4-4fdf586c1f6f",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "io_wr",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "oldBlockColor": "fuchsia"
+          },
+          "position": {
             "x": 808,
-            "y": 592
+            "y": 448
+          }
+        },
+        {
+          "id": "cedc54ee-0659-47ec-9852-bf1f9bdc752e",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "io_wr",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "oldBlockColor": "fuchsia"
+          },
+          "position": {
+            "x": 1152,
+            "y": 472
+          }
+        },
+        {
+          "id": "057f9a99-b20e-412e-a0ac-1400933b341f",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "uart0_data",
+            "range": "[7:0]",
+            "pins": [
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "blockColor": "fuchsia"
+          },
+          "position": {
+            "x": -432,
+            "y": 496
+          }
+        },
+        {
+          "id": "0452f787-c8c3-4f30-8359-7c6660383eb8",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "mem_addr",
+            "range": "[15:0]",
+            "pins": [
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "blockColor": "fuchsia"
+          },
+          "position": {
+            "x": 1152,
+            "y": 536
+          }
+        },
+        {
+          "id": "e1e9fe1b-86e6-4ddc-a97a-b100409d62a8",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "io_rd",
+            "pins": [
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "oldBlockColor": "fuchsia"
+          },
+          "position": {
+            "x": 776,
+            "y": 536
           }
         },
         {
@@ -1082,8 +1274,162 @@
             "blockColor": "fuchsia"
           },
           "position": {
-            "x": -128,
+            "x": 1136,
+            "y": 760
+          }
+        },
+        {
+          "id": "3894899d-79fe-4232-9470-c0345c4c4e4c",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "dout",
+            "range": "[15:0]",
+            "pins": [
+              {
+                "index": "15",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "14",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "13",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "12",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "11",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "10",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "9",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "8",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "blockColor": "fuchsia",
+            "oldBlockColor": "fuchsia"
+          },
+          "position": {
+            "x": 488,
             "y": 768
+          }
+        },
+        {
+          "id": "d3703daa-73b8-41a1-8f96-9e118d401a9f",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "do",
+            "range": "[7:0]",
+            "pins": [
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true,
+            "blockColor": "fuchsia",
+            "oldBlockColor": "fuchsia"
+          },
+          "position": {
+            "x": 840,
+            "y": 800
           }
         },
         {
@@ -1163,8 +1509,8 @@
             "blockColor": "fuchsia"
           },
           "position": {
-            "x": -136,
-            "y": 848
+            "x": 1136,
+            "y": 832
           }
         },
         {
@@ -1260,8 +1606,8 @@
             "oldBlockColor": "fuchsia"
           },
           "position": {
-            "x": 688,
-            "y": 888
+            "x": 1952,
+            "y": 832
           }
         },
         {
@@ -1281,29 +1627,8 @@
             "oldBlockColor": "fuchsia"
           },
           "position": {
-            "x": -136,
-            "y": 904
-          }
-        },
-        {
-          "id": "61472292-3ce5-4a8e-aff3-2640eba07498",
-          "type": "basic.outputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "unlocked",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": ""
-              }
-            ],
-            "virtual": true,
-            "oldBlockColor": "fuchsia"
-          },
-          "position": {
-            "x": -120,
-            "y": 968
+            "x": 1136,
+            "y": 888
           }
         },
         {
@@ -1395,11 +1720,12 @@
               }
             ],
             "virtual": true,
-            "blockColor": "fuchsia"
+            "blockColor": "fuchsia",
+            "oldBlockColor": "fuchsia"
           },
           "position": {
-            "x": -112,
-            "y": 1064
+            "x": 1136,
+            "y": 944
           }
         },
         {
@@ -1411,46 +1737,8 @@
             "local": false
           },
           "position": {
-            "x": 304,
-            "y": 656
-          }
-        },
-        {
-          "id": "69f24903-e5b6-43d9-8bfc-909949fc0d73",
-          "type": "basic.code",
-          "data": {
-            "code": " //-- Puerto de salida\n  always @(posedge clk) \n    if (w4)\n      port <= dout[4:0];\n",
-            "params": [],
-            "ports": {
-              "in": [
-                {
-                  "name": "clk"
-                },
-                {
-                  "name": "dout",
-                  "range": "[7:0]",
-                  "size": 8
-                },
-                {
-                  "name": "w4"
-                }
-              ],
-              "out": [
-                {
-                  "name": "port",
-                  "range": "[4:0]",
-                  "size": 5
-                }
-              ]
-            }
-          },
-          "position": {
-            "x": 1376,
-            "y": 432
-          },
-          "size": {
-            "width": 272,
-            "height": 96
+            "x": 1568,
+            "y": 600
           }
         },
         {
@@ -1498,8 +1786,8 @@
             }
           },
           "position": {
-            "x": 1376,
-            "y": 56
+            "x": 1656,
+            "y": -48
           },
           "size": {
             "width": 328,
@@ -1510,12 +1798,12 @@
           "id": "3c8e0ab1-5c56-48a0-881e-ddcf94bf771a",
           "type": "basic.info",
           "data": {
-            "info": "## J1a - 9\n\nFunciona!  Va a 115200 baudios\nSin PLL\nNO usa el DTR: se puede probar desde el terminal de icestudio\nMemoria separada\nNo necesita usar el fichero mem.v\n\nPara probar los leds desde el terminal:\n\n```\n$1f leds\n: blink 32 0 do i leds 10 ms loop ;\nblink\n```\n",
+            "info": "## J1a \n\nFunciona!  Va a 115200 baudios  \nSin PLL  \nNO usa el DTR: se puede probar desde el terminal de icestudio  \nMemoria separada  \nNo necesita usar el fichero mem.v  \n\nPara probar los leds desde el terminal:\n\n```\n$1f leds\n: blink 32 0 do i leds 10 ms loop ;\nblink\n```\n",
             "readonly": true
           },
           "position": {
-            "x": 32,
-            "y": -296
+            "x": -400,
+            "y": -304
           },
           "size": {
             "width": 560,
@@ -1526,8 +1814,8 @@
           "id": "f68cb39c-4a93-47c5-9073-253f0cee0917",
           "type": "3db97e88b7f9a2a65931f3638eaa612a255dccd7",
           "position": {
-            "x": -40,
-            "y": 200
+            "x": -64,
+            "y": 152
           },
           "size": {
             "width": 96,
@@ -1538,8 +1826,8 @@
           "id": "e40e4536-5f7b-466d-bddf-4aac29652ef3",
           "type": "35f267d0df6ffcb7fc33753bc9df9cf083642cca",
           "position": {
-            "x": 88,
-            "y": 200
+            "x": 64,
+            "y": 152
           },
           "size": {
             "width": 96,
@@ -1550,7 +1838,7 @@
           "id": "e69a332a-f12a-4bcc-a832-c6e223c65ecd",
           "type": "basic.code",
           "data": {
-            "code": "// @include mem.v\n\n//---------------------- memory\n\nwire we0 = 1'b1;\nwire we1 = 1'b1;\n//wire wclke0 = mem_wr & !mem_addr[12] & unlocked;\n//wire wclke1 = mem_wr & mem_addr[12] & unlocked;\n\nwire wclke = mem_wr & unlocked;\n\n//-- Definición de la tabla\n//-- Tabla de TAM elementos de M bits\nreg [15:0] tabla[0:4095];\n\n//-- Read the table\nalways @(posedge clk)\n  insn <= tabla[code_addr[11:0]];\n\n//-- Puerto escritura\nalways @(posedge clk)\n  if (wclke)\n      tabla[mem_addr[12:1]] <= dout;\n\n//-- Init table from PROG parameter\ninitial begin\n  if (PROG) $readmemh(PROG, tabla);\nend\n\n\n/*\n\nSB_RAM2048x2 #(\n.INIT_0(256'hfcfdfcfcfffcfdfffffdfcfefefdfdfefefdfcfefefffefdfcfcfffdfefefefd),\n.INIT_1(256'hfdfefdfcfffdfefefcfefcfcfffcfefefdfffffffffcfffcfcfcfffefdfefdfc),\n.INIT_2(256'hfdfcfefffefcfefcfffffffefffefdfcfefefdfdfdfcfffcfdfcfdfcfdfefffc),\n.INIT_3(256'hfdfefefefcfdfdfcfdfefcfcfcfefdfdfffefefdfefcfcfdfefdfcfdfffdfcfc),\n.INIT_4(256'hfefcfcfffefcfefefefcfcfefefdfcfefffcfdfffffefefffdfcfdfdfffcfcfd),\n.INIT_5(256'hfffffefdfcfdfefffdfffefffefdfcfcfefcfefdfefcfcfcfffcfdfffcfcfcff),\n.INIT_6(256'hfefefefcfefefcfefcfcfcfefefefefefefcfefcfefefefefffcfefffffefffe),\n.INIT_7(256'hfefefefcfcfcfefcfefcfefefefefefefcfefcfefefefcfcfefcfefefefefcfe),\n.INIT_8(256'hfffefffefffdfcfcfcfefcfefcfcfcfefcfcfefcfcfcfcfefcfcfefcfcfcfefe),\n.INIT_9(256'hfcfcfffdfcfefdfffffdfdfdfffffffffffcfcfdfdfdfffdfffcfffefefefffe),\n.INIT_A(256'hfdfdfdfefcfcfdfcfffefffcfffefdfcfefffffefffcfcfdfcfcfefefefdfefd),\n.INIT_B(256'hfdfcfcfcfdfdfdfdfffcfffdfffdfcfefcfdfffdfffdfffdfdfefcfffcfffefc),\n.INIT_C(256'hfefffffefffefefffefefefefefffffffffefefefefefefffffffffffffeffff),\n.INIT_D(256'hfefffffefefffffefefefefffefffffefefefefffffefffffefefefefefffeff),\n.INIT_E(256'hfefffffefefefefefefffffffefffffefffefffffffffefefefffefffffffefe),\n.INIT_F(256'hfefefffffffefffefefefffffffefffffefffefffefffefefffffffefffeffff)\n) _bn10 (\n.RDATA(insn1[1:0]),\n.RADDR(code_addr[10:0]),\n.RCLK(clk), .RCLKE(1'b1), .RE(1'b1),\n.WCLK(clk), .WCLKE(wclke1), .WE(we1),\n.WADDR(mem_addr[11:1]),\n.MASK(16'h0000), .WDATA(dout[1:0]));\n\nSB_RAM2048x2 #(\n.INIT_0(256'hfefdfffefefcfdfdfcfefffffefcfcfefcfefffffcfffffdfdfcfcfdfcfffffd),\n.INIT_1(256'hfefefefffdfdfffdfcfdfdfdfefdfdfefcfefdfcfefffcfdfcfffcfcfcfefcfe),\n.INIT_2(256'hfffffdfdfefefcfdfcfcfffdfcfdfffcfdfdfdfcfcfdfefcfefcfffdfcfcfefc),\n.INIT_3(256'hfdfffdfefffefefdfffefcfffcfefefefcfcfcfffcfefcfcfffdfefefcfefcfc),\n.INIT_4(256'hfcfdfffcfefdfffdfcfdfefdfffcfffcfcfcfefdfdfcfffdfffdfcfffffdffff),\n.INIT_5(256'hfcfffefffdfcfdfffcfefdfcfdfcfffffefcfcfcfefcfffefefdfcfcfefefefd),\n.INIT_6(256'hfefcfcfefefefefcfcfefcfcfefefcfcfefcfcfefefcfdfdfdfefcfcfefcfcfd),\n.INIT_7(256'hfcfcfefefefefcfcfcfefefcfcfcfefefefcfefefefefcfefcfefefefcfcfefe),\n.INIT_8(256'hfcfefcfefefcfcfcfcfefefcfcfefcfcfefefcfefcfcfcfefcfefcfcfcfcfefe),\n.INIT_9(256'hfefdfdfefffffdfffcfefefefdfdfcfefffcfdfdfcfcfcfdfcfdfefdfcfdfcfc),\n.INIT_A(256'hfffdfcfdfcfcfdfdfefffefffcfdfffefcfdfcfffefcfdfdfdfdfefefcfdfefc),\n.INIT_B(256'hfcfdfcfcfcfcfefcfffdfefffcfefffffffdfefcfcfffdfffffffcfffffcffff),\n.INIT_C(256'hfefefffefffffffffefefefefefffefefefefffefefefefefffefffffefffefe),\n.INIT_D(256'hfefffffffffffefefefffefffffffffefffffefefefffffefefffefefffefeff),\n.INIT_E(256'hfefefefffffefffefffefffffefffefefefffffffefffefefefffffffffefffe),\n.INIT_F(256'hfefefefefefefffefffffefefefffffefffffefffefffefefffefefffefefffe)\n) _bn11 (\n.RDATA(insn1[3:2]),\n.RADDR(code_addr[10:0]),\n.RCLK(clk), .RCLKE(1'b1), .RE(1'b1),\n.WCLK(clk), .WCLKE(wclke1), .WE(we1),\n.WADDR(mem_addr[11:1]),\n.MASK(16'h0000), .WDATA(dout[3:2]));\n\nSB_RAM2048x2 #(\n.INIT_0(256'hfefffcfdfefefdfcfcfcfcfefffefcfcfcfcfdfffffdfcfffcfdfffcfffcfdfe),\n.INIT_1(256'hfdfcfefefefffefcfefdfefdfdfcfffefefcfcfdfdfffdfcfcfcfffefffcfcfc),\n.INIT_2(256'hfdfefcfffefcfdfcfdfffffcfcfefffffcfcfdfdfdfcfffcfefffdfcfdfcfffd),\n.INIT_3(256'hfdfcfffefdfcfcfefffefcfefcfcfffffdfdfefefffcfdfffcfffffcfcfcfefd),\n.INIT_4(256'hfdfcfffefcfcfefcfcfdfefefdfefffcfcfcfffffcfcfefdfffcfdfefffefefd),\n.INIT_5(256'hfcfdfdfcfffefdfefffcfcfcfefdfefefcfcfcfffdfefcfdfefdfcfdfcfcfefc),\n.INIT_6(256'hfefcfefefefefefefefcfefefefcfcfefefefcfcfefcfcfefefefcfefffdfdfe),\n.INIT_7(256'hfcfcfefcfcfefefefefefefcfcfefefefcfefcfcfcfcfefcfefefefefcfefefe),\n.INIT_8(256'hfdfcfefcfcfefcfcfcfcfcfefcfcfcfefefefefcfefefefefcfcfefefefcfcfe),\n.INIT_9(256'hfcfefcfdfcfefcfcfffcfcfffcfefffcfcfffcfdfcfefcfdfdfdfffcfcfefdfe),\n.INIT_A(256'hfcfefffefdfdfdfcfffefcfcfdfefdfffcfefffcfcfefdfdfcfefcfcfdfcfffe),\n.INIT_B(256'hfdfcfdfdfdfdfdfefffefcfcfdfcfcfefcfffffffffcfdfcfdfefcfcfefefefc),\n.INIT_C(256'hfffefefefefefffffffefefffffefefefffffefffefefefffffffefefefefeff),\n.INIT_D(256'hfffffffefffefffffffffffefefefefffefefefefffffffefffffffffffefffe),\n.INIT_E(256'hfffefefefefefefffffefffffefefffffffffffefefefffffefefffffffefeff),\n.INIT_F(256'hfefefffffefefefffefefefefffffffffefefefffefffefffffffffffffffffe)\n) _bn12 (\n.RDATA(insn1[5:4]),\n.RADDR(code_addr[10:0]),\n.RCLK(clk), .RCLKE(1'b1), .RE(1'b1),\n.WCLK(clk), .WCLKE(wclke1), .WE(we1),\n.WADDR(mem_addr[11:1]),\n.MASK(16'h0000), .WDATA(dout[5:4]));\n\nSB_RAM2048x2 #(\n.INIT_0(256'hfefefefcfefefcfdfefcfcfcfefefcfcfefcfdfdfdfdfcfefcfcfcfefcfdfcff),\n.INIT_1(256'hfcfffcfefcfefdfefcfffcfcfdfcfffcfdfffcfcfdfcfcfffdfcfcfefcfefcfc),\n.INIT_2(256'hfdfdfdfdfefefcfdfcfdfefdfcfcfcfefdfcfcfefdfefdfcfefefcfefcfcfcfd),\n.INIT_3(256'hfcfdfefdfefdfcfcfcfdfcfefcfefcfdfcfdfefefcfdfdfffffffcfdfcfcfcfd),\n.INIT_4(256'hfefdfcfffcfefffcfefdfdfefcfefcfcfefcfcfffcfefefcfffffcfefdfdfcfe),\n.INIT_5(256'hfefdfcfffcfdfcfffcfffcfcfffcfdfefefcfefcfffdfefdfefcfcfcfdfffcfd),\n.INIT_6(256'hfefcfefefefefcfefcfcfcfefcfcfcfcfcfcfcfcfefcfdfcfffdfcfcfffcfdfc),\n.INIT_7(256'hfcfcfefefcfcfefcfefcfefefcfefcfcfcfefcfcfcfcfefefefefefefcfcfcfe),\n.INIT_8(256'hfefcfcfcfdfffcfcfcfcfcfefcfcfcfcfefcfefefcfefcfefcfcfefcfefefcfe),\n.INIT_9(256'hfefcfefcfdfcfcfcfefdfcfcfcfcfcfdfdfffdfcfdfdfffcfffcfefdfdfcfcfc),\n.INIT_A(256'hfcfcfffcfcfcfcfefdfefefcfdfcfcfcfcfcfcfdfcfefcfcfdfcfcfcfefdfeff),\n.INIT_B(256'hfdfcfcfcfcfdfcfdfefffefcfefdfdfcfcfcfffefefcfefdfcfdfcfcfcfffdfc),\n.INIT_C(256'hfefffefefffefefefefffefefefffefefefffefefffffefefefefefefffffefe),\n.INIT_D(256'hfefffefffefefefffefffefffefefffefffefefefffefefffefffefffefffeff),\n.INIT_E(256'hfefffefefffffefefffffffffefefefffefffefffefefffefffffefefefffefe),\n.INIT_F(256'hfefefefffefefffffffefefffefffefefefffffefffefffffefefefffefffeff)\n) _bn13 (\n.RDATA(insn1[7:6]),\n.RADDR(code_addr[10:0]),\n.RCLK(clk), .RCLKE(1'b1), .RE(1'b1),\n.WCLK(clk), .WCLKE(wclke1), .WE(we1),\n.WADDR(mem_addr[11:1]),\n.MASK(16'h0000), .WDATA(dout[7:6]));\n\nSB_RAM2048x2 #(\n.INIT_0(256'hfcfefcfdfefefcfefcfdfefefefffcfefdfdfffffdfefdfdfdfcfefffcfefdfd),\n.INIT_1(256'hfffdfcfdfcfcfcfefefdfcfefdfdfffefffffefcfefcfcfdfdfdfcfcfcfcfdfc),\n.INIT_2(256'hfcfefcfffcfcfcfcfcfffcfdfcfffcfcfefcfefcfffdfffcfcfcfefcfcfcfefc),\n.INIT_3(256'hfcfefefffcfcfdfffcfefdfffcfefcfffcfffcfdfcfcfcfdfcfdfcfefcfefcfc),\n.INIT_4(256'hfcfcfdfcfdfcfcfcfcfdfdfdfcfcfcfefdfcfcfcfcfdfdfdfcfcfcfffcfcfcff),\n.INIT_5(256'hfcfdfcfffcfcfcfefdfffffffefcfefcfefcfefcfefcfcfcfefcfefffffcfcff),\n.INIT_6(256'hfcfcfcfcfefefcfcfcfcfcfefcfcfcfefefefcfcfcfcfcfefcfcfdfffcfcfdff),\n.INIT_7(256'hfcfefcfcfcfcfcfcfcfcfcfcfcfefcfefcfcfcfcfcfefcfcfcfcfefefcfefcfe),\n.INIT_8(256'hfcfcfdfffcfcfcfcfcfcfcfcfcfcfcfcfcfefcfcfcfcfcfefcfcfefcfcfcfcfe),\n.INIT_9(256'hfdfffcfdfefefcfdfcfcfdfffcfffcfefcfcfcfcfdfdfcfcfcfcfcfdfdfffcfe),\n.INIT_A(256'hfcfffdfffdfefcfcfdfdfdfcfdfffdfefcfefcfefdfdfcfdfcfcfcfefcfcffff),\n.INIT_B(256'hfdfdfdfcfcfdfcfffefefcfffcfdfefefdfffffefcfffdfcfefefcfdfcfdfcfc),\n.INIT_C(256'hfffefffffefffefefefffefefefefefefefffefffefefefefefefefffefefeff),\n.INIT_D(256'hfefefefefefffefffffffffffffefefffefefefefefefefffefefefffffefeff),\n.INIT_E(256'hfffefefffefffefffffefefffefefefefefffffefffffefffefefefefefffeff),\n.INIT_F(256'hfefefefefefffefffefefffffefffffffefefffffffffffefffffefffefefeff)\n) _bn14 (\n.RDATA(insn1[9:8]),\n.RADDR(code_addr[10:0]),\n.RCLK(clk), .RCLKE(1'b1), .RE(1'b1),\n.WCLK(clk), .WCLKE(wclke1), .WE(we1),\n.WADDR(mem_addr[11:1]),\n.MASK(16'h0000), .WDATA(dout[9:8]));\n\nSB_RAM2048x2 #(\n.INIT_0(256'hfcfcfcfdfdfcfefdfdfffefcfcfdfffcfdfffffdfcfdfdfefcfcfcfefcfcfdff),\n.INIT_1(256'hfdfffcfcfcfcfcfefcfcfffefefefcfcfcfefffefcfcfcfcfcfcfcfcfcfeffff),\n.INIT_2(256'hfcfdfcfefcfefcfcfcfffcfdfcfffcfefefefcfdfcfcfdfcfffcfcfdfefefcfd),\n.INIT_3(256'hfcfcfdfcfcfdfcfffefcfcfcfcfcfefdfcfefcfffcfcfefcfcfcfefdfcfefcfc),\n.INIT_4(256'hfcfcfdfdfcfdfcfcfcfcfcfcfcfcfefcfdfdfcfcfcfdfdfcfcfffcfcfcfdfcff),\n.INIT_5(256'hfcfdfdfdfdfdfcfefdfffdfcfcfcfcfcfcfcfcfcfcfcfdfcfcfcfefffcfcfefc),\n.INIT_6(256'hfcfcfcfefefefcfcfcfcfefcfcfcfcfefcfefcfcfcfcfcfefcfcfdfffcfcfcfe),\n.INIT_7(256'hfcfefcfcfcfcfcfcfcfcfcfefefcfcfefcfcfcfcfcfefcfefcfefefefcfefefc),\n.INIT_8(256'hfcfcfcfcfcfefcfcfcfcfcfcfcfcfcfcfefcfcfcfcfcfefefcfefcfcfcfcfefc),\n.INIT_9(256'hfefcfcfefefcfcfdfdfcfcfcfcfffdfcfcfefdfcfcfcfdfcfcfcfcfcfcfefcfe),\n.INIT_A(256'hfcfffefcfdfefefdfcfcfdfcfcfefdfcfcfefcfcfdfffcfcfcfcfcfefcfcfcfc),\n.INIT_B(256'hfcfcfdfcfcfdfcfefcfdfefdfcfefefcfdfefcfdfefcfcfffefdfcfdfcfcfcfc),\n.INIT_C(256'hfefffefefefefefefefefefefffefffefefefefffffefefefefffefffffefeff),\n.INIT_D(256'hfefffefefffefefffffffefefefefefefefefefefefefefefefefeffffffffff),\n.INIT_E(256'hfefefffffefefefffefefefefefefefffefffffffefefefefefefefefefefeff),\n.INIT_F(256'hfefefefefffffefefefefefefefefefefefffefefefefefffefefefefefefeff)\n) _bn15 (\n.RDATA(insn1[11:10]),\n.RADDR(code_addr[10:0]),\n.RCLK(clk), .RCLKE(1'b1), .RE(1'b1),\n.WCLK(clk), .WCLKE(wclke1), .WE(we1),\n.WADDR(mem_addr[11:1]),\n.MASK(16'h0000), .WDATA(dout[11:10]));\n\nSB_RAM2048x2 #(\n.INIT_0(256'hfcfffefcfcfcfffcfdfcfefdfcfcfefcfdfcfefcfefcfdfcfcfcfdfefefcfdfc),\n.INIT_1(256'hfdfcfdfcfefdfffcfefefefcfefefcfcfefefffcfcfefcfcfcfcfcfcfefcfffc),\n.INIT_2(256'hfcfcfcfcfdfcfcfcfdfcfdfdfdfdfefffffcfcfefcfefcfefcfcfcfefefefdff),\n.INIT_3(256'hfefcfdfcfffdfdfdfcfdfcfcfcfcfffcfdfcfdfcfcfdfcfcfcfcfffcfdfdfcfd),\n.INIT_4(256'hfcfcfdfcfdfcfcfdfcfcfcfcfcfcfcfcfdfcfcfdfcfcfdfcfcfcfdfcfefcfefe),\n.INIT_5(256'hfcfcfcfdfdfcfdfdfffcfefffcfffdfefcfefcfefcfefffcfcfefcfefcfefcfc),\n.INIT_6(256'hfcfcfcfcfefefcfcfcfcfefcfcfcfcfcfcfcfcfcfcfcfdfcfcfdfcfdfcfdfcfc),\n.INIT_7(256'hfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfefcfcfcfc),\n.INIT_8(256'hfcfcfffdfcfdfcfcfcfcfcfcfcfcfcfcfefcfcfcfcfcfefcfefcfcfefcfcfefc),\n.INIT_9(256'hfffcfcfdfffcfcfcfcfcfcfcfcfcfefcfcfcfcfcfcfcfdfcfcfcfcfcfcfcfcfc),\n.INIT_A(256'hfcfcfefcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfefcfdfcfcfdfdfcfcfcfcfcfdfd),\n.INIT_B(256'hfcfcfcfcfdfcfdfcfdfcfffcfcfdfffcfdfcfcfcfffcfdfcfffcfdfcfcfdfdfc),\n.INIT_C(256'hfffffffffefffefefefefefefffffffefefffefefefefefefefefefefffefefe),\n.INIT_D(256'hfffffffffffefffefffefffffffffefffffefefefefefefefefefffffffefffe),\n.INIT_E(256'hfffffffefefffefefefefefefefefffffffefffefffefefffefefefefefefefe),\n.INIT_F(256'hfefefefefffefefffffefefefefefefefefefefefefefefefefefefefefefffe)\n) _bn16 (\n.RDATA(insn1[13:12]),\n.RADDR(code_addr[10:0]),\n.RCLK(clk), .RCLKE(1'b1), .RE(1'b1),\n.WCLK(clk), .WCLKE(wclke1), .WE(we1),\n.WADDR(mem_addr[11:1]),\n.MASK(16'h0000), .WDATA(dout[13:12]));\n\nSB_RAM2048x2 #(\n.INIT_0(256'hfcfcfcfefcfffcfdfcfffcfefcfefcfdfcfefcfefcfefcfffefdfefdfcfefcff),\n.INIT_1(256'hfcfdfcfdfcfcfcfffcfffcfefcfffdfefcfffcfefcfdfcfdfefdfdfcfcfefcfe),\n.INIT_2(256'hfcfefcfffdfefefcfcfffcfffcfffcfefcfdfcfdfcfdfdfcfcfdfefdfcfefcfd),\n.INIT_3(256'hfcfefcfffcfffcfffcfcfcfefdfefcfdfcfffcfffcfefcfefcfffcfdfcfffefc),\n.INIT_4(256'hfcfefcfffefdfcfcfcfefcfffffcfcfcfcfefcfefefcfcfdfcfffcfffcfdfcff),\n.INIT_5(256'hfcfffcfffefdfcfffcfffcfffcfcfcfdfdfcfcfdfcfdfcfefefdfcfffcfdfcfd),\n.INIT_6(256'hfcfefcfefefefcfefefcfcfcfcfefcfefcfefefcfcfefcfffdfefcfffcfefcfe),\n.INIT_7(256'hfcfefcfefcfefcfefcfefcfefcfefcfefcfefefcfcfefcfefcfefefcfcfefcfc),\n.INIT_8(256'hfcfefcfffcfefefcfcfefcfefefcfcfefcfcfcfefcfcfcfefcfefcfcfcfcfcfc),\n.INIT_9(256'hfcfdfcfefcfffcfffcfffcfffcfffcfffcfffefcfefdfcfefcfffcfffcfffdfe),\n.INIT_A(256'hfcfffcfdfdfefcfffefdfdfefcfffdfefcfffcfefcfffefcfefdfdfefcfefcff),\n.INIT_B(256'hfcfdfdfcfcfdfcfdfcfffcfdfcfefcfffcfffcfffcfdfcfffcfffcfffcfefefd),\n.INIT_C(256'hfefffefffefefefefefffffefefffefffefefefefefefefffefffefffefefeff),\n.INIT_D(256'hfefffefffefffefffefffefffefffefefefffffefefffefffefefefffefffefe),\n.INIT_E(256'hfefffefffefefefefefffffefefffefffefffefffefffefefefefefffefffeff),\n.INIT_F(256'hfffefefefefffefefefffefffefffefffefffefffefffefffefffefffefefeff)\n) _bn17 (\n.RDATA(insn1[15:14]),\n.RADDR(code_addr[10:0]),\n.RCLK(clk), .RCLKE(1'b1), .RE(1'b1),\n.WCLK(clk), .WCLKE(wclke1), .WE(we1),\n.WADDR(mem_addr[11:1]),\n.MASK(16'h0000), .WDATA(dout[15:14]));\n\n\nreg c11;\nalways @(posedge clk)\n  c11 <= code_addr[11];\n\nassign insn = c11 ? insn1 : insn0;\n*/\n",
+            "code": "reg insn;\n//-- Definición de la tabla\n//-- Tabla de TAM elementos de M bits\nreg [15:0] tabla[0:4095];\n\n//-- Read the table\nalways @(posedge clk)\n  insn <= tabla[code_addr[11:0]];\n\n//-- Puerto escritura\nalways @(posedge clk)\n  if (mem_wr)\n      tabla[mem_addr[12:1]] <= d;\n\n//-- Init table from PROG parameter\ninitial begin\n  if (PROG) $readmemh(PROG, tabla);\nend\n",
             "params": [
               {
                 "name": "PROG"
@@ -1575,10 +1863,7 @@
                   "name": "mem_wr"
                 },
                 {
-                  "name": "unlocked"
-                },
-                {
-                  "name": "dout",
+                  "name": "d",
                   "range": "[15:0]",
                   "size": 16
                 }
@@ -1593,8 +1878,8 @@
             }
           },
           "position": {
-            "x": 120,
-            "y": 776
+            "x": 1384,
+            "y": 720
           },
           "size": {
             "width": 464,
@@ -1602,18 +1887,17 @@
           }
         },
         {
-          "id": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
+          "id": "67608171-9d00-4a4d-ba4d-b8ad837daf1c",
           "type": "basic.code",
           "data": {
-            "code": "// @include j1.v\n\n// @include stack2.v\n// @include nuc.list\n\n   localparam MHZ = 12;\n\n//-- Señales añadidas\nassign do = dout;\nassign w4_o = w4;\nassign mem_addr_o = mem_addr;\nassign code_addr_o = code_addr;\nassign mem_wr_o = mem_wr;\nassign dout_o = dout;\nassign unlocked_o = unlocked;\n\nwire [15:0] dout;\n wire io_rd, io_wr;\n  wire [15:0] mem_addr;\n  wire mem_wr;\n  wire [15:0] io_din;\n  wire [12:0] code_addr;\n  reg unlocked = 0;\n\n  j1 _j1(\n    .clk(clk),\n    .resetq(resetq),\n    .io_rd(io_rd),    //-- output\n    .io_wr(io_wr),    //-- output\n    .mem_wr(mem_wr),  //-- output\n    .dout(dout),      //-- output\n    .io_din(io_din),  //-- input\n    .mem_addr(mem_addr),  //-- output\n    .code_addr(code_addr), //-- output (13 bits)\n    .insn(insn));          //-- input\n\n  // ######   IO SIGNALS   ####################################\n\n\twire io_wr_ = io_wr, io_rd_ = io_rd;\n\twire [15:0] dout_ = dout; //--\n\twire [15:0] io_addr_ = mem_addr;\n\n\n  // ######   UART   ##########################################\n  \n  assign uart0_wr = io_wr_ & io_addr_[12];\n  assign uart0_rd = io_rd_ & io_addr_[12];\n\n\n  wire [4:0] LEDS;\n  wire w4 = io_wr_ & io_addr_[2];\n\n  assign io_din =\n    (io_addr_[12] ? {8'd0, uart0_data}                                  : 16'd0) |\n    (io_addr_[13] ? {11'd0, 1'b1, 1'b1, 1'b1, uart0_valid, !uart0_busy} : 16'd0);\n\n\n\n  always @(posedge clk)\n    if (!resetq)\n      unlocked <= 0;\n    else\n      unlocked <= unlocked | io_wr_;\n\n\n\n\n",
+            "code": "assign io_din =\n    (io_addr_[12] ? {8'd0, uart0_data}                                  : 16'd0) |\n    (io_addr_[13] ? {11'd0, 1'b1, 1'b1, 1'b1, uart0_valid, !uart0_busy} : 16'd0);\n    ",
             "params": [],
             "ports": {
               "in": [
                 {
-                  "name": "clk"
-                },
-                {
-                  "name": "resetq"
+                  "name": "io_addr_",
+                  "range": "[15:0]",
+                  "size": 16
                 },
                 {
                   "name": "uart0_valid"
@@ -1625,48 +1909,169 @@
                   "name": "uart0_data",
                   "range": "[7:0]",
                   "size": 8
+                }
+              ],
+              "out": [
+                {
+                  "name": "io_din",
+                  "range": "[15:0]",
+                  "size": 16
+                }
+              ]
+            }
+          },
+          "position": {
+            "x": -232,
+            "y": 368
+          },
+          "size": {
+            "width": 368,
+            "height": 152
+          }
+        },
+        {
+          "id": "69f24903-e5b6-43d9-8bfc-909949fc0d73",
+          "type": "basic.code",
+          "data": {
+            "code": "wire w4 = io_wr & io_addr_[2];\nreg port;\n\n //-- Puerto de salida\n  always @(posedge clk) \n    if (w4)\n      port <= dout[4:0];\n",
+            "params": [],
+            "ports": {
+              "in": [
+                {
+                  "name": "clk"
                 },
                 {
-                  "name": "insn",
+                  "name": "dout",
+                  "range": "[7:0]",
+                  "size": 8
+                },
+                {
+                  "name": "io_wr"
+                },
+                {
+                  "name": "io_addr_",
                   "range": "[15:0]",
                   "size": 16
                 }
               ],
               "out": [
                 {
-                  "name": "do",
-                  "range": "[7:0]",
-                  "size": 8
+                  "name": "port",
+                  "range": "[4:0]",
+                  "size": 5
+                }
+              ]
+            }
+          },
+          "position": {
+            "x": 1360,
+            "y": 400
+          },
+          "size": {
+            "width": 392,
+            "height": 160
+          }
+        },
+        {
+          "id": "33ef7f71-b635-4048-b028-6cc02dc06512",
+          "type": "basic.code",
+          "data": {
+            "code": "assign uart0_wr = io_wr & io_addr[12];\n  assign uart0_rd = io_rd & io_addr[12];",
+            "params": [],
+            "ports": {
+              "in": [
+                {
+                  "name": "io_wr"
                 },
                 {
-                  "name": "w4_o"
+                  "name": "io_rd"
                 },
+                {
+                  "name": "io_addr",
+                  "range": "[15:0]",
+                  "size": 16
+                }
+              ],
+              "out": [
                 {
                   "name": "uart0_rd"
                 },
                 {
                   "name": "uart0_wr"
+                }
+              ]
+            }
+          },
+          "position": {
+            "x": 1248,
+            "y": 64
+          },
+          "size": {
+            "width": 280,
+            "height": 96
+          }
+        },
+        {
+          "id": "00a3b976-7deb-4679-9b24-1a0df1922ad2",
+          "type": "26f57ab819923cfb72331d71a53aae8ab0714455",
+          "position": {
+            "x": 656,
+            "y": 768
+          },
+          "size": {
+            "width": 96,
+            "height": 64
+          }
+        },
+        {
+          "id": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
+          "type": "basic.code",
+          "data": {
+            "code": "// @include j1.v\n// @include stack2.v\n\n  j1 _j1(\n    .clk(clk),\n    .resetq(resetq),\n    .io_rd(io_rd),    //-- output\n    .io_wr(io_wr),    //-- output\n    .mem_wr(mem_wr),  //-- output\n    .dout(dout),      //-- output\n    .io_din(io_din2),  //-- input\n    .mem_addr(mem_addr),  //-- output\n    .code_addr(code_addr), //-- output (13 bits)\n    .insn(insn));          //-- input\n\n\n  \n\n\n\n",
+            "params": [],
+            "ports": {
+              "in": [
+                {
+                  "name": "clk"
                 },
                 {
-                  "name": "mem_addr_o",
+                  "name": "resetq"
+                },
+                {
+                  "name": "insn",
                   "range": "[15:0]",
                   "size": 16
                 },
                 {
-                  "name": "code_addr_o",
+                  "name": "io_din2",
+                  "range": "[15:0]",
+                  "size": 16
+                }
+              ],
+              "out": [
+                {
+                  "name": "mem_addr",
+                  "range": "[15:0]",
+                  "size": 16
+                },
+                {
+                  "name": "code_addr",
                   "range": "[12:0]",
                   "size": 13
                 },
                 {
-                  "name": "mem_wr_o"
+                  "name": "mem_wr"
                 },
                 {
-                  "name": "dout_o",
+                  "name": "dout",
                   "range": "[15:0]",
                   "size": 16
                 },
                 {
-                  "name": "unlocked_o"
+                  "name": "io_wr"
+                },
+                {
+                  "name": "io_rd"
                 }
               ]
             }
@@ -1676,52 +2081,12 @@
             "y": 64
           },
           "size": {
-            "width": 504,
-            "height": 552
+            "width": 456,
+            "height": 328
           }
         }
       ],
       "wires": [
-        {
-          "source": {
-            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
-            "port": "uart0_rd"
-          },
-          "target": {
-            "block": "420cb073-0164-4994-aff2-52ccecf1e1a3",
-            "port": "inlabel"
-          }
-        },
-        {
-          "source": {
-            "block": "e9ee0c57-2054-4b22-ba37-8e3824b76a2d",
-            "port": "outlabel"
-          },
-          "target": {
-            "block": "c3c2baef-792a-4df9-a9a7-832e41a43a84",
-            "port": "uart0_rd"
-          }
-        },
-        {
-          "source": {
-            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
-            "port": "uart0_wr"
-          },
-          "target": {
-            "block": "0b755e68-ff16-425a-aae3-f3fea766e8d4",
-            "port": "inlabel"
-          }
-        },
-        {
-          "source": {
-            "block": "11127019-1657-4653-bb9e-05d1d37070cc",
-            "port": "outlabel"
-          },
-          "target": {
-            "block": "c3c2baef-792a-4df9-a9a7-832e41a43a84",
-            "port": "uart0_wr"
-          }
-        },
         {
           "source": {
             "block": "c3c2baef-792a-4df9-a9a7-832e41a43a84",
@@ -1730,26 +2095,6 @@
           "target": {
             "block": "134bee0f-d49e-44a5-b516-136280140b10",
             "port": "inlabel"
-          }
-        },
-        {
-          "source": {
-            "block": "ba1e3f74-8fb7-4864-8f22-cd1ba63309fe",
-            "port": "outlabel"
-          },
-          "target": {
-            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
-            "port": "uart0_valid"
-          }
-        },
-        {
-          "source": {
-            "block": "9373440c-282f-4ca8-afc0-1434cbe7fc34",
-            "port": "outlabel"
-          },
-          "target": {
-            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
-            "port": "uart0_busy"
           }
         },
         {
@@ -1764,36 +2109,12 @@
         },
         {
           "source": {
-            "block": "4cda24d4-a3c1-49b8-a0b9-98339e420700",
-            "port": "outlabel"
-          },
-          "target": {
-            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
-            "port": "uart0_data",
-            "size": 8
-          },
-          "size": 8
-        },
-        {
-          "source": {
             "block": "c3c2baef-792a-4df9-a9a7-832e41a43a84",
             "port": "uart0_data",
             "size": 8
           },
           "target": {
             "block": "68883952-c3b3-486d-8a09-8ad2e20c8625",
-            "port": "inlabel"
-          },
-          "size": 8
-        },
-        {
-          "source": {
-            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
-            "port": "do",
-            "size": 8
-          },
-          "target": {
-            "block": "d3703daa-73b8-41a1-8f96-9e118d401a9f",
             "port": "inlabel"
           },
           "size": 8
@@ -1824,82 +2145,6 @@
         },
         {
           "source": {
-            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
-            "port": "w4_o"
-          },
-          "target": {
-            "block": "5295e5c1-0bf9-461f-a8e4-4fdf586c1f6f",
-            "port": "inlabel"
-          }
-        },
-        {
-          "source": {
-            "block": "0ec733b1-535c-40d0-b802-7cdb57136885",
-            "port": "outlabel"
-          },
-          "target": {
-            "block": "69f24903-e5b6-43d9-8bfc-909949fc0d73",
-            "port": "w4"
-          }
-        },
-        {
-          "source": {
-            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
-            "port": "mem_addr_o",
-            "size": 16
-          },
-          "target": {
-            "block": "28867e8d-be43-4edc-b0d9-ab13ffb974e6",
-            "port": "inlabel"
-          },
-          "size": 16
-        },
-        {
-          "source": {
-            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
-            "port": "code_addr_o",
-            "size": 13
-          },
-          "target": {
-            "block": "06c4daac-b4e1-4e2f-8f77-ff04f6036b93",
-            "port": "inlabel"
-          },
-          "size": 13
-        },
-        {
-          "source": {
-            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
-            "port": "dout_o",
-            "size": 16
-          },
-          "target": {
-            "block": "a6c3ecc6-1806-4869-b4d5-48c0a222a290",
-            "port": "inlabel"
-          },
-          "size": 16
-        },
-        {
-          "source": {
-            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
-            "port": "unlocked_o"
-          },
-          "target": {
-            "block": "a2da3af8-2e41-42c8-b09b-ca94fe19cff4",
-            "port": "inlabel"
-          }
-        },
-        {
-          "source": {
-            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
-            "port": "mem_wr_o"
-          },
-          "target": {
-            "block": "2311157e-f95a-45f1-b0f3-fae6327d511b",
-            "port": "inlabel"
-          }
-        },
-        {
-          "source": {
             "block": "7d973072-fdc4-4bd9-bba2-4f7354223963",
             "port": "outlabel"
           },
@@ -1924,18 +2169,6 @@
         },
         {
           "source": {
-            "block": "a19ecd0a-edfb-456d-a814-d21b8891dfcf",
-            "port": "outlabel"
-          },
-          "target": {
-            "block": "e69a332a-f12a-4bcc-a832-c6e223c65ecd",
-            "port": "dout",
-            "size": 16
-          },
-          "size": 16
-        },
-        {
-          "source": {
             "block": "84935129-b4ae-4a7a-bc58-637987780743",
             "port": "outlabel"
           },
@@ -1944,16 +2177,6 @@
             "port": "mem_wr"
           },
           "vertices": []
-        },
-        {
-          "source": {
-            "block": "61472292-3ce5-4a8e-aff3-2640eba07498",
-            "port": "outlabel"
-          },
-          "target": {
-            "block": "e69a332a-f12a-4bcc-a832-c6e223c65ecd",
-            "port": "unlocked"
-          }
         },
         {
           "source": {
@@ -1978,6 +2201,212 @@
             "size": 16
           },
           "size": 16
+        },
+        {
+          "source": {
+            "block": "a19ecd0a-edfb-456d-a814-d21b8891dfcf",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "e69a332a-f12a-4bcc-a832-c6e223c65ecd",
+            "port": "d",
+            "size": 16
+          },
+          "size": 16
+        },
+        {
+          "source": {
+            "block": "c06e17f4-90fb-469d-a3c7-5ecd1984fdc6",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "67608171-9d00-4a4d-ba4d-b8ad837daf1c",
+            "port": "io_addr_",
+            "size": 16
+          },
+          "size": 16
+        },
+        {
+          "source": {
+            "block": "99fb25cc-9093-4fec-bd12-10520b39146a",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "67608171-9d00-4a4d-ba4d-b8ad837daf1c",
+            "port": "uart0_valid"
+          },
+          "vertices": [
+            {
+              "x": -368,
+              "y": 392
+            }
+          ]
+        },
+        {
+          "source": {
+            "block": "cdf21fa6-cd46-4942-b1f9-21e6151702a7",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "67608171-9d00-4a4d-ba4d-b8ad837daf1c",
+            "port": "uart0_busy"
+          }
+        },
+        {
+          "source": {
+            "block": "057f9a99-b20e-412e-a0ac-1400933b341f",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "67608171-9d00-4a4d-ba4d-b8ad837daf1c",
+            "port": "uart0_data",
+            "size": 8
+          },
+          "size": 8
+        },
+        {
+          "source": {
+            "block": "0452f787-c8c3-4f30-8359-7c6660383eb8",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "69f24903-e5b6-43d9-8bfc-909949fc0d73",
+            "port": "io_addr_",
+            "size": 16
+          },
+          "size": 16
+        },
+        {
+          "source": {
+            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
+            "port": "io_wr"
+          },
+          "target": {
+            "block": "5295e5c1-0bf9-461f-a8e4-4fdf586c1f6f",
+            "port": "inlabel"
+          }
+        },
+        {
+          "source": {
+            "block": "cedc54ee-0659-47ec-9852-bf1f9bdc752e",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "69f24903-e5b6-43d9-8bfc-909949fc0d73",
+            "port": "io_wr"
+          }
+        },
+        {
+          "source": {
+            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
+            "port": "io_rd"
+          },
+          "target": {
+            "block": "e1e9fe1b-86e6-4ddc-a97a-b100409d62a8",
+            "port": "inlabel"
+          }
+        },
+        {
+          "source": {
+            "block": "65054fd5-3a52-4baa-9f3b-cf0405b5cd4e",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "33ef7f71-b635-4048-b028-6cc02dc06512",
+            "port": "io_wr"
+          }
+        },
+        {
+          "source": {
+            "block": "5608d4e7-f423-46ec-b3f4-5a1f9eb6ffc8",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "33ef7f71-b635-4048-b028-6cc02dc06512",
+            "port": "io_addr",
+            "size": 16
+          },
+          "size": 16
+        },
+        {
+          "source": {
+            "block": "69632eae-c06e-4814-8648-eb13f9b0cbb0",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "33ef7f71-b635-4048-b028-6cc02dc06512",
+            "port": "io_rd"
+          }
+        },
+        {
+          "source": {
+            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
+            "port": "mem_addr",
+            "size": 16
+          },
+          "target": {
+            "block": "28867e8d-be43-4edc-b0d9-ab13ffb974e6",
+            "port": "inlabel"
+          },
+          "size": 16
+        },
+        {
+          "source": {
+            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
+            "port": "code_addr",
+            "size": 13
+          },
+          "target": {
+            "block": "06c4daac-b4e1-4e2f-8f77-ff04f6036b93",
+            "port": "inlabel"
+          },
+          "size": 13
+        },
+        {
+          "source": {
+            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
+            "port": "mem_wr"
+          },
+          "target": {
+            "block": "2311157e-f95a-45f1-b0f3-fae6327d511b",
+            "port": "inlabel"
+          }
+        },
+        {
+          "source": {
+            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
+            "port": "dout",
+            "size": 16
+          },
+          "target": {
+            "block": "a6c3ecc6-1806-4869-b4d5-48c0a222a290",
+            "port": "inlabel"
+          },
+          "size": 16
+        },
+        {
+          "source": {
+            "block": "3894899d-79fe-4232-9470-c0345c4c4e4c",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "00a3b976-7deb-4679-9b24-1a0df1922ad2",
+            "port": "65464f98-4fb4-4295-ab73-153196ce1d0d",
+            "size": 16
+          },
+          "size": 16
+        },
+        {
+          "source": {
+            "block": "00a3b976-7deb-4679-9b24-1a0df1922ad2",
+            "port": "c675bded-7009-4371-b928-dadba3620245",
+            "size": 8
+          },
+          "target": {
+            "block": "d3703daa-73b8-41a1-8f96-9e118d401a9f",
+            "port": "inlabel"
+          },
+          "size": 8
         },
         {
           "source": {
@@ -2038,6 +2467,37 @@
           "target": {
             "block": "e69a332a-f12a-4bcc-a832-c6e223c65ecd",
             "port": "PROG"
+          }
+        },
+        {
+          "source": {
+            "block": "67608171-9d00-4a4d-ba4d-b8ad837daf1c",
+            "port": "io_din"
+          },
+          "target": {
+            "block": "a9d1a7b7-5129-4f5f-9403-62eaad3cd393",
+            "port": "io_din2"
+          },
+          "size": 16
+        },
+        {
+          "source": {
+            "block": "33ef7f71-b635-4048-b028-6cc02dc06512",
+            "port": "uart0_wr"
+          },
+          "target": {
+            "block": "c3c2baef-792a-4df9-a9a7-832e41a43a84",
+            "port": "uart0_wr"
+          }
+        },
+        {
+          "source": {
+            "block": "33ef7f71-b635-4048-b028-6cc02dc06512",
+            "port": "uart0_rd"
+          },
+          "target": {
+            "block": "c3c2baef-792a-4df9-a9a7-832e41a43a84",
+            "port": "uart0_rd"
           }
         }
       ]
@@ -3009,6 +3469,133 @@
                 "block": "664caf9e-5f40-4df4-800a-b626af702e62",
                 "port": "in"
               }
+            }
+          ]
+        }
+      }
+    },
+    "26f57ab819923cfb72331d71a53aae8ab0714455": {
+      "package": {
+        "name": "Separador-bus",
+        "version": "0.1",
+        "description": "Separador de bus de 16-bits en buses de 8 bits",
+        "author": "Juan González-Gómez (Obijuan)",
+        "image": "%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22354.768%22%20height=%22241.058%22%20viewBox=%220%200%20332.59497%20225.99201%22%3E%3Cpath%20d=%22M168.377%2077.643l61.147-60.938C240.21%206.25%20254.56.461%20269.484.5h62.611v26.186l-61.698.046c-8.012-.043-15.705%203.133-21.47%208.81L187.48%2096.857a57.292%2057.292%200%200%201-39.993%2016.139%2057.292%2057.292%200%200%201%2039.993%2016.14l61.448%2061.314c5.765%205.677%2013.458%208.853%2021.47%208.81l61.698.046v26.186h-62.612c-14.924.039-29.463-5.9-40.204-16.28l-60.902-60.863a29.857%2029.857%200%200%200-21.347-8.81L.5%20139.427V86.457h146.524a29.884%2029.884%200%200%200%2021.353-8.814z%22%20fill=%22green%22%20stroke=%22#000%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22/%3E%3C/svg%3E"
+      },
+      "design": {
+        "graph": {
+          "blocks": [
+            {
+              "id": "ae5a4023-0e63-4bdb-8963-31d3e3f13a90",
+              "type": "basic.output",
+              "data": {
+                "name": "o1",
+                "range": "[7:0]",
+                "size": 8
+              },
+              "position": {
+                "x": 584,
+                "y": 144
+              }
+            },
+            {
+              "id": "65464f98-4fb4-4295-ab73-153196ce1d0d",
+              "type": "basic.input",
+              "data": {
+                "name": "i",
+                "range": "[15:0]",
+                "clock": false,
+                "size": 16
+              },
+              "position": {
+                "x": 120,
+                "y": 200
+              }
+            },
+            {
+              "id": "c675bded-7009-4371-b928-dadba3620245",
+              "type": "basic.output",
+              "data": {
+                "name": "o0",
+                "range": "[7:0]",
+                "size": 8
+              },
+              "position": {
+                "x": 584,
+                "y": 272
+              }
+            },
+            {
+              "id": "16e78204-213e-4833-9096-89d735307ec2",
+              "type": "basic.code",
+              "data": {
+                "code": "assign o1 = i[15:8];\nassign o0 = i[7:0];",
+                "params": [],
+                "ports": {
+                  "in": [
+                    {
+                      "name": "i",
+                      "range": "[15:0]",
+                      "size": 16
+                    }
+                  ],
+                  "out": [
+                    {
+                      "name": "o1",
+                      "range": "[7:0]",
+                      "size": 8
+                    },
+                    {
+                      "name": "o0",
+                      "range": "[7:0]",
+                      "size": 8
+                    }
+                  ]
+                }
+              },
+              "position": {
+                "x": 296,
+                "y": 176
+              },
+              "size": {
+                "width": 208,
+                "height": 112
+              }
+            }
+          ],
+          "wires": [
+            {
+              "source": {
+                "block": "16e78204-213e-4833-9096-89d735307ec2",
+                "port": "o0"
+              },
+              "target": {
+                "block": "c675bded-7009-4371-b928-dadba3620245",
+                "port": "in"
+              },
+              "size": 8
+            },
+            {
+              "source": {
+                "block": "16e78204-213e-4833-9096-89d735307ec2",
+                "port": "o1"
+              },
+              "target": {
+                "block": "ae5a4023-0e63-4bdb-8963-31d3e3f13a90",
+                "port": "in"
+              },
+              "size": 8
+            },
+            {
+              "source": {
+                "block": "65464f98-4fb4-4295-ab73-153196ce1d0d",
+                "port": "out"
+              },
+              "target": {
+                "block": "16e78204-213e-4833-9096-89d735307ec2",
+                "port": "i"
+              },
+              "size": 16
             }
           ]
         }
