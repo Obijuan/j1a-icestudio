@@ -52,53 +52,8 @@ counter
 
 ### Vídeo
 
-[![Click to see the youtube video](https://www.youtube.com/watch?v=KoiPz8ke7vM)](https://www.youtube.com/watch?v=KoiPz8ke7vM)
-
-
-
-### Testing the firmaware in C
-
-* go to the firmware/soc-demo/src-c folder
-* Execute make (It is assumed that you already have the risc-v tools installed)
-* You should see a binary counter in the LEDs
-* If you open a serial terminal (115200 bauds) you will see messages
-
-![](wiki/v1.2.0/terminal-01.png)
-
-
-
-* In this [youtube video](https://www.youtube.com/watch?v=mv1SFoqzZWY) you can see it in action!
-
-![](wiki//v1.2.0/demo-01.gif)
-
-* Pressing the "1" key will reset the counter and show the intial message again
-
-
-### Testing the firmware in asm
-
-* go to the firmware/soc-demo/src-asm folder
-* Execute make
-* You should see a value in the LEDs
+[![Click to see the youtube video](http://img.youtube.com/vi/I-QJlhb5YSo/0.jpg)](https://www.youtube.com/watch?v=I-QJlhb5YSo)]
 
 ## Credits
 
-It is based on the picorv32 by Clifford Wolf
-https://github.com/cliffordwolf/picorv32
-
-## SOCs for the RARs simulator
-
-There are two socs for using with the RARs simulador:
-* soc-rars-MMIO-1-port.ice: It have no uart and 1 output port at address 0xFFFF0000, connected to the LEDs
-* soc-rars-MMIO-2-ports.ice: The previous soc plus one additional output port, connected to the D0-D7 pins in the Alhambra II board
-
-In the firmware/soc-rars-MMIO-1/rars and firmware/soc-rars-MMIO-2/rars folderS there are examples for trying. Open them with the RARs simulator, assemble and dump the code into a .bin file. Then flash it into the FPGA with iceprog tool:
-
-```
-iceprog -o 1M file.bin
-```
-
-
-
-
-# j1a-icestudio
-SwapForth J1a processor for Icestudio
+* [Project SwapForth](https://github.com/jamesbowman/swapforth) By James Bowman. Thanks a lot for this awesome project. The J1a processor was the first i tried with the icestorm open source tools. I learnt a lot and it was a source of inspiration
