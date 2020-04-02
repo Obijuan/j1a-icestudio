@@ -1212,7 +1212,7 @@
           "id": "65e5ed38-6c4c-4aab-8069-c328e953e98c",
           "type": "basic.input",
           "data": {
-            "name": "",
+            "name": "Serial",
             "pins": [
               {
                 "index": "0",
@@ -1232,7 +1232,7 @@
           "id": "b3c0e86d-bfb3-490a-ae3d-50965518826a",
           "type": "basic.output",
           "data": {
-            "name": "tx",
+            "name": "Serial",
             "pins": [
               {
                 "index": "0",
