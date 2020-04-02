@@ -774,11 +774,28 @@
           }
         },
         {
+          "id": "ebc0b15f-2e15-4488-af53-fa1be7b7e895",
+          "type": "basic.constant",
+          "data": {
+            "name": "depth",
+            "value": "15",
+            "local": false
+          },
+          "position": {
+            "x": 648,
+            "y": 248
+          }
+        },
+        {
           "id": "8f233f1b-e9e0-4219-9a27-56371b77f2aa",
           "type": "basic.code",
           "data": {
-            "code": "localparam WIDTH = 16;\nlocalparam DEPTH = 15;\nlocalparam BITS = (WIDTH * DEPTH) - 1;\n\nwire move = delta[0];\n\nreg [15:0] head;\nreg [BITS:0] tail;\nwire [15:0] headN;\nwire [BITS:0] tailN;\n\nassign headN = we ? wd : tail[15:0];\nassign tailN = delta[1] ? {16'h55aa, tail[BITS:16]} : {tail[BITS-16:0], head};\n\n  always @(posedge clk) begin\n    if (we | move)\n      head <= headN;\n    if (move)\n      tail <= tailN;\n  end\n\n  assign rd = head;\n",
-            "params": [],
+            "code": "localparam WIDTH = 16;\nlocalparam BITS = (WIDTH * DEPTH) - 1;\n\nwire move = delta[0];\n\nreg [15:0] head;\nreg [BITS:0] tail;\nwire [15:0] headN;\nwire [BITS:0] tailN;\n\nassign headN = we ? wd : tail[15:0];\nassign tailN = delta[1] ? {16'h55aa, tail[BITS:16]} : {tail[BITS-16:0], head};\n\n  always @(posedge clk) begin\n    if (we | move)\n      head <= headN;\n    if (move)\n      tail <= tailN;\n  end\n\n  assign rd = head;\n",
+            "params": [
+              {
+                "name": "DEPTH"
+              }
+            ],
             "ports": {
               "in": [
                 {
@@ -934,6 +951,16 @@
             "size": 16
           },
           "size": 16
+        },
+        {
+          "source": {
+            "block": "ebc0b15f-2e15-4488-af53-fa1be7b7e895",
+            "port": "constant-out"
+          },
+          "target": {
+            "block": "8f233f1b-e9e0-4219-9a27-56371b77f2aa",
+            "port": "DEPTH"
+          }
         }
       ]
     }
