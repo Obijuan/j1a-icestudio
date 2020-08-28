@@ -14,6 +14,7 @@ The j1a-simple is a modified version of the J1a:
 It can be synthesized on any of the supported boards with **OpenFPGAs**, althout in this repo there are only example for the following boards:  
   * [Alhambra II](https://github.com/FPGAwars/Alhambra-II-FPGA/wiki)
   * Icestick
+  * BlackIce II
 
 ## Quick start
 

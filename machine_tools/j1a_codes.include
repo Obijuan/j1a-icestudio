@@ -1,0 +1,57 @@
+// J1a translation file ver. 0.1
+// format: mnemonic=<hexcode0>,<hexcode1>...<hexcodeN>
+
+// no operation
+nop=0x6000
+// add
+add=0x6202
+// xor
+xor=0x6502
+// and
+and=0x6302
+// or
+or=0x6402
+// not
+invert=0x6600
+// equal
+eq=0x6702
+// less than
+lt=0x6802
+// unsigned less than
+ult=0x6f02
+// swap
+swap=0x6180
+// duplicate
+dup=0x6081
+// drop
+drop=0x6102
+// over
+over=0x6181
+// delete pre-last item on stack
+nip=0x6002
+// push from data stack to return stack
+pushr=0x6146
+// pop from return stack to data stack
+popr=0x6b89
+// load from memory
+load=0x6c00
+// store into memory
+store=0x6022,0x6102
+// depth of data stack
+dsp=0x6e81
+// left shift
+lsh=0x6d02
+// right shift
+rsh=0x6902
+// decrement
+decr=0x6a00
+// increase data stack pointer
+up=0x6001
+// decrease data stack pointer
+down=0x6002
+// copy
+copy=0x6100
+// halt, default memory content
+halt=0xffff
+// write data to input-output memory
+inport=0x6043, 0x7003
